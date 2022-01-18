@@ -1,0 +1,22 @@
+<!-- <app-child [products]="salesProducts">
+  <h1 class="head">products</h1>
+  <a class="link" href="#">buy products</a>
+
+  <p class="site" *ngFor="let s of sites">{{ s }}</p>
+</app-child>
+<app-child [products]="salesbooks">
+  <h1 class="head">books</h1>
+  <a class="link" href="#">buy books</a>
+  <p class="site" *ngFor="let s of sites">{{ s }}</p>
+</app-child> -->
+<app-child *ngIf="flag" [result]="result">
+  <h1 #cheader>hi hello gm</h1>
+</app-child>
+<button (click)="toggle()">toggle</button>
+<input type="text" [(ngModel)]="result" name="" id="" />
+<p>{{ result }}</p>
+<div>
+  <h1 #header>technoElevate</h1>
+  <!-- <p #header>testYentra</p> -->
+</div>
+<button (click)="fun()">change name</button>
