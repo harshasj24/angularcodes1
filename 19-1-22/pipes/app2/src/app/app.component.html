@@ -1,0 +1,18 @@
+<table border="2px">
+  <tr>
+    <th>name</th>
+    <th>city</th>
+    <th>id</th>
+    <th>salary</th>
+    <th>DOB</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let data of users">
+    <td>{{ data.names | uppercase }}</td>
+    <td>{{ data.names }}</td>
+    <td>{{ data.id }}</td>
+    <td>{{ data.salary }}</td>
+    <td>{{ data.DOB | date: "dd/MM/yyyy" }}</td>
+    <td>{{ data.DOB | age }}</td>
+  </tr>
+</table>
