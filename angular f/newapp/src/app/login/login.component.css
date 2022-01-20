@@ -1,0 +1,7 @@
+form {
+  width: 350px !important;
+  margin-top: 80px;
+  padding: 20px;
+  height: 400px;
+  box-shadow: 0.5px 0 5px gray;
+}

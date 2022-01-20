@@ -1,0 +1,59 @@
+<app-parent>
+    <h1>sidth</h1>
+</app-parent>
+
+<button (click)="toggle()">toggle</button> <br />
+<br />
+<p style="font-size: 100px" *ngIf="isVal">hello there!</p>
+<input style="width: 80%" type="text" [(ngModel)]="word" name="" id="" />
+<button (click)="yas()">search</button>
+<h1>{{ word }}</h1>
+
+<img
+  *ngIf="bool"
+  src="https://scontent.fblr4-2.fna.fbcdn.net/v/t1.6435-9/p180x540/178227667_306577430833610_6124095311362051911_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=ua3K4JlGC28AX98T_hA&_nc_ht=scontent.fblr4-2.fna&oh=00_AT_HNkHRR_aS_MbgigTDWjFmCbemT8gX5DMapi41h66CRA&oe=6204DEC9"
+  alt=""
+/>
+<h1 *ngIf="no" style="color: red">no data present</h1>
+<table border="2px">
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.age }}</td>
+  </tr>
+</table>
+
+<ul>
+  <li *ngFor="let user of users">name:{{ user.name }} ,age:{{ user.age }}</li>
+</ul>
+<!-- <button (click)="dis()">cm</button> -->
+<!-- <input type="text" [(ngModel)]="junglee" name="" id="" />
+<h1>{{ junglee }}</h1> -->
+<!-- <table *ngIf="bool" border="2px">
+  <tr>
+    <td>name</td>
+  </tr>
+  <tr>
+    <td>{{ woe }}</td>
+  </tr>
+</table> -->
+
+<div [ngSwitch]="selectedcountry">
+  <div *ngSwitchCase="'ind'">
+    <h1>India has been selected</h1>
+  </div>
+  <div *ngSwitchCase="'us'">
+    <h1>united states of america has been selected</h1>
+  </div>
+  <div *ngSwitchCase="'uk'">
+    <h1>united kingdom has been selected</h1>
+  </div>
+  <div *ngSwitchCase="'jap'">
+    <h1>japan has been selected</h1>
+  </div>
+  <div *ngSwitchCase="'rus'">
+    <h1>russia has been selected</h1>
+  </div>
+  <div *ngSwitchDefault>
+    <h1>no country has been selected</h1>
+  </div>
+</div>

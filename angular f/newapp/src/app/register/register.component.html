@@ -1,0 +1,53 @@
+<!-- <form
+  #regForm="ngForm"
+  (ngSubmit)="onSubmit(regForm)"
+  class="w-50 mx-auto mt-5"
+>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input
+      #fname="ngModel"
+      type="text"
+      class="form-control"
+      name="fname"
+      aria-describedby="emailHelp"
+      ngModel
+      required
+      minlength="6"
+      pattern="[a-zA-Z]+$"
+    />
+
+    <span style="color: red" *ngIf="(fname.invalid && fname.touched) || flag"
+      >Invalid</span
+    >
+
+    <div id="emailHelp" class="form-text">
+      We'll never share your email with anyone else.
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input
+      #pass="ngModel"
+      type="password"
+      name="pass"
+      class="form-control"
+      required
+      ngModel
+      pattern="[1-9]{8}$"
+    />
+    <span style="color: red" *ngIf="pass.invalid && pass.touched"
+      >*Invalid Password</span
+    >
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<table border="1px">
+  <tr>
+    <th>details</th>
+  </tr>
+  <tr>
+    <td *ngIf="fname.valid">{{ regForm.value.fname | json }}</td>
+  </tr>
+</table> -->
