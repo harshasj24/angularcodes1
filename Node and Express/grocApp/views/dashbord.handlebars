@@ -1,0 +1,127 @@
+
+
+<script type="text/javascript">
+
+</script>
+{{> navbar}}
+
+
+  <div><h1>Hello {{name}} Welcome to Dashbord</h1> </div>
+
+
+
+
+<div class="container">
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    class="btn btn-primary btn-sm mb-3"
+    data-toggle="modal"
+    data-target="#exampleModal"
+    style="margin-left: 92%;"
+  >
+    Add Item
+  </button>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Item ID</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Edit Item</th>
+        <th scope="col">Delete Item</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each item}}
+        <tr>
+          <th scope="row">{{_id}}</th>
+          <td>{{iName}}</td>
+          <td>{{iDesc}}</td>
+          <td> ₹ {{iPrice}}</td>
+          <td>
+
+            <a href="/user/edit-item/{{_id}}" class="btn btn-primary">Edit</a>
+          </td>
+          <td>
+            <a
+              class="btn btn-danger"
+              href="/user/delete-item/{{_id}}"
+            >delete</a>
+          </td>
+        </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+
+  {{! edit }}
+  <!-- Modal -->
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add your Items Here</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/user/add-item" method="post">
+            <div class="form-group">
+
+              <input
+                type="text"
+                class="form-control"
+                id="iName"
+                name="iName"
+                aria-describedby="emailHelp"
+                placeholder="item name"
+              />
+
+            </div>
+            <div class="form-group">
+
+              <input
+                type="text"
+                placeholder="description"
+                class="form-control"
+                id="iDesc"
+                name="iDesc"
+              />
+            </div>
+            <div class="form-group">
+
+              <input
+                placeholder="Price"
+                type="text"
+                class="form-control"
+                id="iPrice"
+                name="iPrice"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

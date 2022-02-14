@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="ml-5 text-success"> User Data</h1>
+  <table class="table">
+    <tr class="bg-dark text-light">
+      <th>name</th>
+      <th>ID</th>
+    </tr>
+    {{#each persons}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{id}}</td>
+      </tr>
+    {{/each}}
+
+  </table>
+</div>

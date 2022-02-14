@@ -1,0 +1,17 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HARSHA S J",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0",
+    "validators": "^0.3.1"
+  }
+}
