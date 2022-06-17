@@ -1,0 +1,19 @@
+cookies are small piece of information with key value pairs which are generated on the 
+server side but present on the browser side 
+2  types of cookies
+1.persistent cookie will not get deleted when browser secession ended 
+2.non-persistent cookie will get deleted when browser secession endded 
+3.the persistent cookie will stay alive based on the miliseconds presented in max Age pro
+perty   
+
+
+
+1.browser will get the domian name from the http request 
+2.it will search for all avalible cookies associated with the domain name present in the 
+local storage or in its memory
+3.before making the request it will attach all the cookies with the http request.
+4.if cookie does not exixts it will send the request without cookies
+
+
+
+cookie is the only way to store information from the server to the user end

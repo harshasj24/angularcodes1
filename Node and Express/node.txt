@@ -1,0 +1,814 @@
+ if we want ot create one server we have to import HTTP core module then by using the refernce 
+of the core module we have to call create server method, which will tAKE ONE CALL back 
+function and take request and responce objects as arguments 
+and respone.end method it will treminate request and responce cycle.
+
+then server shoud listen to a port 
+
+
+
+************Fs module{
+  sync function completes its operation.
+incase of async the other thread will not wait
+
+  
+
+}
+
+**********NPM{
+
+npm stands for Node Pakage manager which is used to install thrid party modules and
+for third party modules pakages.json file should be there in where  it contains
+depe  
+
+
+}
+
+
+*****************Events{
+
+event emitter.on wil take 2 arguments 1st as name and 2nd as callback function
+}
+
+buffer is the memory location which will store small chunck of data once the user consume
+the data inside the buffer then it will loaded again
+
+
+
+****************url{
+URL stands for uniform resources locator which uniquely identify one applicaton over the 
+network. 
+primarily we have 2 type of urls 
+1. web url(identifies one web application over the network)
+2.DB url(identifies one Data base application over the network)
+by using url we can acess one web resorces.
+
+**************Diference Between Static and Dynamic web resources************************
+
+1. static web resources will already present inside the application and 
+   dynamic web resourece will generated after the request 
+2. static web resources will not be change after n number of request
+   Incase of dynamic web resources it may change or may not change
+3. in order to acess a staic web resources we have to mention file name with the url
+   in order to acesss a dynamic eb resources we have to configure the url
+4. An web application with one dynamic resoures is concederd to be one dynmaic web application
+   if all the web resources are static resources in one web application then it is conce
+   dered to be one static web appplication
+-----------------------------------------------------------------------------------------
+_________________________________________________________________________________________
+ ******structure of url -> protocol://domain:port/path?key=value &key=value#fragment
+   
+protocol-> It is a set of rules and regulation which 2 web application interact oneanother
+domain-> It uniquely identify the sysytem name primarly a computer name
+port(number)->port uniquely identifies one particular aplication inside a system over
+	      the network
+path-> uniquely identifies a patricular web resources inside a particular application
+*queary params are used to pass data from frontend to the server it will be an key value 
+pairs if i have more than one key value pairs we have to seperate them using &
+
+fragment-> by using fragment we can navigate to a particualr sectin in side a html page
+
+note: for browser protocol and port number these 2 are not mandetory 
+-----------------------------------------------------------------------------------------
+}
+
+
+*****************NODE IMPORTENT QUESTIONS*************************
+1.What is an web application types of web application
+2.web resources and types
+3.explain static and dynamic with realtime example
+4.diff betwwn satatic and dynmamic 
+5.what is server
+6.what is node and features 
+7.diffrence between blocking io and nonblocking io
+8.diff betwnn corme v8 and node v8
+9.what is REPL  
+10.what are module in node js
+11.types of each module with one example
+12.diff sync and async
+13.wt are the global objects of node js
+14.what is event emitter class and explain with one example
+15.on,once,emit,removelistner,removealllistner,eventnames,addlistner
+16.explain os module with an example
+17.what is stream and buffers
+18.create one stream with 3 events like open data end
+19.how to create one server in node js
+20.how to provide routes to a server
+21.how to send data from the server  
+22.what is URL.
+23.types of URL
+24.structure of URL
+25.how to pass quarry params in url
+26.what is the structure of http request
+27.what are the key elements http req
+28. what are the key elements of http responce
+29.http methods
+30.what is status code?
+31.what are the ways to comunuicate with the web application
+32.what is comand line arguments in node js
+33.explain validators module with few example.
+34.what is package.json files how to create that and purpose
+35.0_0
+36.explain url module with example
+37.‎
+
+
+key elements of http request:=
+1.web URL
+2.Form data
+3.http methods
+4.cookies in order to reqconize the user then server creates the server then if the same 
+user will login it will provide the data
+
+-----------------------------------------------------------------------------------------
+header (web url formdata http mehods)
+-----------------------------------------------------------------------------------------
+body(form data)
+-----------------------------------------------------------------------------------------
+
+
+key elements of http respone:
+1.status code-> 200 status code=> server sucesssfully handles the request|
+404 status code=> means page not fount or webresource not found|
+500 status code=> internal server error
+2.actual content-
+3.content type-
+plaintext-text/plain
+html-text/html
+JSON-Aplication/Json
+PDF-Aplication/pdf
+4.cookies-
+
+ways to interact with an web app:
+1.Typing the web url
+2.by clicking on the links
+3.by submitting form data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

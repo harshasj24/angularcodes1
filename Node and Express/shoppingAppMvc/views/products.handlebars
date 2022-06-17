@@ -1,0 +1,45 @@
+<a href="/products/add-products" type="button" class="btn btn-primary">Add
+  product</a>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">pName</th>
+      <th scope="col">pDesc</th>
+      <th scope="col">pPrice</th>
+      <th>image</th>
+      <th>Edit Products</th>
+      <th>Delete Products</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each products}}
+
+      <tr>
+
+        <th scope="row">{{_id}}</th>
+        <td>{{pName}}</td>
+        <td>{{pDesc}}</td>
+        <td>{{pPrice}}</td>
+        <td>{{img}}</td>
+        <td>
+          <form action="/products/edit-product/{{_id}}" method="get">
+            <button type="submit" class="btn btn-primary">Edit</button>
+          </form>
+        </td>
+        <td>
+          {{!-- <form action="/products/delete-product/{{_id}}" method="get">
+            <button type="submit" class="btn btn-primary">Delete</button>
+          </form> --}}
+          <a
+            class="btn btn-primary"
+            href="/products/delete-product/{{_id}}"
+          >delete</a>
+        </td>
+      </tr>
+
+    {{/each}}
+
+  </tbody>
+</table>

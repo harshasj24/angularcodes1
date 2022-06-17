@@ -1,0 +1,50 @@
+<div class="container mt-3 w-50">
+  <form action="/products/edit-products" method="POST">
+    <div class="form-group">
+      {{! <label for="exampleInputEmail1">Email address</label> }}
+      <input
+        type="text"
+        class="form-control"
+        id="_id"
+        name="_id"
+        value="{{selectedPro._id}}"
+        aria-describedby="emailHelp"
+      />
+
+    </div>
+    <div class="form-group">
+
+      <input
+        type="text"
+        class="form-control"
+        id="pName"
+        name="pName"
+        value="{{selectedPro.pName}}"
+      />
+    </div>
+    <div class="form-group">
+
+      <input
+        type="text"
+        class="form-control"
+        id="pDesc"
+        name="pDesc"
+        aria-describedby="emailHelp"
+        value="{{selectedPro.pDesc}}"
+      />
+    </div>
+    <div class="form-group">
+
+      <input
+        type="text"
+        class="form-control"
+        id="pPrice"
+        name="pPrice"
+        aria-describedby="emailHelp"
+        value="{{selectedPro.pPrice}}"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,206 @@
+
+#STEPS TO INSTALL ANGULAR
+
+
+1.FIRST INSTALL NODE FROM THE WEB
+2.INSTALL TYPE SCRIPT  
+npm install -g typescript
+
+3.THEN INSTALL ANGULAR
+
+COMMAND TO INSTALL ANGULAR
+
+npm install -g @angular/cli@11
+
+then create project in angular:
+
+ng new <projectname>
+
+
+
+
+
+5:40 PM 11-Jan-22
+
+directives:
+directives are the way of changing the behaviour of dom element :
+1-component dertitive.
+2-structural dertives--- add or remove dom elements......
+..*ngif , *ngFor, *ngswitch
+
+2.*ng for:{
+
+}
+
+3. 
+
+
+
++++++++++++life cycle hools+++++++++++++++++++
+every agluar compnent that will under go some certain procedure during intialization of 
+the component
+*for any componenet constructor will be called first which is a not a part of life cycle
+hooks 
+*life cycle hooks are the diffrent stages of 
+1) ngOnchanges->
+this is will be called if my app will have @input bounded filded then angular compililer 
+autometacially call 
+
+**************************Stages of life cycle hooks*************************************
+1-> angular compiler will call constructor first for the copmonent 
+    which is not a part Life cycle Hooks.
+
+2-> the first life hook is ngOnchanges s soon as compiler gets initialized then 
+    ngOnchanges will be automaticallly called by angular compiler which is there 
+    inside onchanges inter face.
+
+3-> orderwise 2nd LCH is ngOninit it will be called by the angular compiler during 
+    initialization and only once. 
+
+4-> orderwise 3nd LCH is ngdocheck. if we have any user difined or default event and 
+    if i make a change in that events then ngdcheck will be called and also if this 
+    events get triggred then also ngCompiler will call ngDocheck
+
+5-> orderwise 3nd LCH is ngaftercontentinit and ngaftercontentchecked.
+    note:content projection is passing full html element from parent component to child 
+    component.
+
+6-> another pair of LCH is ngAfterViewInit() and nfAfterViewChecked() if the whole
+    view get initilized then it will call inetrnally  ngAfterViewInit() if we change 
+    anything documnents ogbjects  ngAfterViewChecked() will be called
+
+
+7-> before destruction of any component the angular compiler will automatically call 
+    ngOnDestroy anytime which will distroy the components
+
+
+
+
+
+
+
+*************changes:simple changes{
+{the on changes will have one argumunent of type simple changes which will track the
+current changes and previous changes}
+
+
+*************elementRef{
+it is a predefined datatype which will store the reference of any html element}
+
+
+
+
+
+
+every angular component will under go some stages from intialization  to destroy of that 
+component is termed as life cycle hooks
+
+
+******************************services**********************{
+services in angular are singleton class 
+single ton class is class which can have only one instance:
+services also typescript class @injectable like component 
+
+cmd - ng g s <service names> or ng g s <folder name>/<service names>
+when the services is created services only have spec.ts and .ts will be present there 
+is no view or style file will be there.
+
+decoratator @injectable
+metaData providedIn : "root"
+
+note:minimum one file is required to create one service whic iis the typescript file
+-----steps to create manually------
+*create one typescript class
+*add export key word before the class
+*decorate with @injecatable
+*provide metadata for providedIn for which the value should be root(root specifies that
+ our services should be a part of module)
+*include the service into the providers array of root module.
+}
+
+other highlevel programing languages constructor is used for dependency injection but
+in angular it is primerly used for dependency injection
+
+************************routing{pre defined module or class which will have all the methods
+and class which is responsible for routing-----
+
+in route module we need to define one const varaible routes of type Routes and varaible 
+will take array as value in the form of key value pairs and key is path and component
+and values are actaual path ofthe component and component names respectively
+
+
+
+inside ng modole there is a method callled forroute(routes) this argument routes will take
+our component array as value and this is main reason for routing}
+
+
+router outlet should be there ifwe want to render the selected component
+
+if we do t type any value (/uer) in rounting then by using defaul t routing we can 
+navigate to a particular component	
+
+TY
+
+
+
+
+
+
+*************************gaurd{
+1.create type script class
+2.add export keyword before the class
+3.implement canActivate interface and define canActivate method
+4.apply canActivate gaurd to the perticular route
+5.include the gaurd name inside providers array of app module
+}
+
+
+
+*******************http request{
+from http request likemget data we get data as obsrvable and we need to subscribe the data
+other wise it will not fetch that data because observables are lazy in nature
+}
+
+
+
+by using featured module the anglur application will become loosely coupled
+if we
+
+ get error in modele then it is not afftected to another module
+
+
+itis having 
+
+
+
+
+cmd:ng g module <mn>
+ng g c modlename/component name
+
+
+
+by using lazy loading we can load the pirticular featured module when it is neeed by
+the browser
+
+
+
+if we want to provide routing for featured module then we should use load childen property
+of routes module
+
+
+
+incase of main route the method is forroot byr in case of child routoing the method
+is for child
+
+main mainpurpuse of the constructor is to not initilze like other progrmaing but it is used
+for dependency injection and ng on init is used for inititalizion of variables in angular
+
+types of module {
+1.core module (single ton services)
+2.shared module (components directives and pipes those i want to share throughout my application)
+if i want to use the core or shared module we need to include the root module and both
+are used for code reuseablity
+3.routing module (all the route related files should be there inside the module)
+4.root module (by deafult app module is the root module)
+5.featured module(user defined module)
+}

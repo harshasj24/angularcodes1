@@ -1,0 +1,48 @@
+db.emp.insert([{
+
+"_id":7369,
+name:"smith",
+job:"cleark",
+mgr:7902,
+hiredate:"17-dec-80",
+sal:800,
+comn:0
+department:{
+	deptno:20,
+	deptname:"HR",
+	loc:"newyork",
+	
+}
+},
+{
+
+"_id":7499,
+name:"allen",
+job:"salesman",
+mgr:7698,
+hiredate:"20-feb-81",
+sal:1600,
+comn:300
+department:{
+	deptno:30,
+	deptname:"sales",
+	loc:"london",
+	
+}
+},
+{
+
+"_id":7521,
+name:"ward",
+job:"salesman",
+mgr:7690,
+hiredate:"20-feb-81",
+sal:1600,
+comn:300
+department:{
+	deptno:30,
+	deptname:"sales",
+	loc:"london",
+	
+}
+},])

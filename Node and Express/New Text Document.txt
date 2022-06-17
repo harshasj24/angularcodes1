@@ -1,0 +1,47 @@
+1.Architecture of JDK ,JRE,JVM
+2.how java is platform independent
+3.WAP for factorial of number
+4.Wap to print fibanoci series
+5.diff b/w while and dowhile
+6.programs to achive nested if
+7.how many pre defined classes-1400 ,methods-7500,pacakges and interfaces.
+
+
+
+
+
+
+
+
+incremental and itterative model of 
+software development 
+
+artifacts
+product backlog
+sprint baclog
+change control bord meeting
+
+
+
+product backlog is the set of tasks to
+be completed in order to achive the complteded product or
+application
+
+
+a piece of tasks taken out of product
+backlog which are to be completed in
+a specifed time frame is called as 
+the sprint backlog.
+
+burnDown chart is the evaluation
+
+
+
+
+
+
+
+
+
+
+ 

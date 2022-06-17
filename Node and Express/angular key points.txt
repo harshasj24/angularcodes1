@@ -1,0 +1,19 @@
+reactive forms :
+
+*in the model we need to crate a instance of a form group for a particular form 
+and assign to a variable
+
+*the form group will take 3 arguments the first argument will be the instnaces of chlid 
+form controlls validators and async validators these 2 are optional
+
+*after that we need to create an instance of a form control with key and value  where 
+key is the formContolName and value will be the incantce of a particular child 
+
+*after that we need to inculde our model in our view by using formgroup directive
+and we need to add formcontalname for each elements in our view 
+ 
+form group will always tracks the status of value ,validation and changes on the field
+of all the child form control intances
+
+where form control will only track individual input field of a particular form and ia basic
+building block of a forms and it represents an individual form element of an form
